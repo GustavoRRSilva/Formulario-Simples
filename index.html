@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Seja Bem vindo</h1>
+    <div class="Informacoes">
+        <form action="">
+            <label for="NomeeSobrenome">
+            Nome e Sobrenome*
+            <input type="text" id="NomeeSobrenome" class="NomeEsobrenome" required placeholder="SeuNome">
+          </label>
+
+          <label for="Email">
+           Seu Email*
+            <input type="text" id="Email" class="Email" required placeholder="Seuemail@dominio.com">
+          </label>
+
+          <label for="Idade">
+            Idade
+            <input type="text" id="Idade" class="Idade" required placeholder="19 anos">
+          </label>
+
+            <fieldset class="trabalho">
+                <legend class="trabalho-legend">Qual opção define melhor o seu atual trabalho*</legend>
+                <select name="" id="">
+                    <option value="">Trabalho em empresa</option>
+                    <option value="">Freelancer</option>
+                    <option value="">Não trabalho </option>
+                </select>
+            </fieldset>
+          </label>
+
+          <Fieldset class="recomendacao">
+            <legend>Você nos recomendaria para um amigo?*</legend>
+            <label for="radio-Recomendaria">
+                <input type="radio" name="recomendaria" id="radio-Recomendaria" checked>
+                Recomendaria
+            </label>
+            <label for="radio-talvez">
+                <input type="radio" name="radio-talvez" id="radio-talvez">
+                Talvez
+            </label>
+
+            <label for="radio-nao-recomendaria">
+                <input type="radio" name="nao recomendaria" id="radio-nao-recomendaria">
+                Não Recomendaria
+            </label>
+          </Fieldset>
+          
+          <label for="desenvolvimento" class="desenvolvimento">
+            <div class="legend-dev">Em qual área de desenvolvimento você trabalha?</div>
+            <select name="" id="">
+                <option value="">Back-End</option>
+                <option value="">Front-End</option>
+                <option value="">Full-Stack</option>
+                <option value="">Eng.Software</option>
+                <option value="">Banco de Dados</option>
+                <option value="">Designer</option>
+            </select>
+          </label>
+          <fieldset class="ferramentas"> 
+            Quais ferramentas você usa para trabalhar?
+            <label for="VSCode">
+                <input type="checkbox" id="VSCode" class="ferramentas-label">
+                VSCode
+            </label>
+
+            <label for="Git">
+                <input type="checkbox" id="Git" class="ferramentas-label">
+                Git
+            </label>
+
+            <label for="Github">
+                <input type="checkbox" id="Github" class="ferramentas-label">
+                GitHub
+            </label>
+
+            <label for="BrModel">
+                <input type="checkbox" id="BrModel" class="ferramentas-label">
+                BrModel
+            </label>
+
+            <label for="Figma" >
+                <input type="checkbox" id="Figma" class="ferramentas-label">
+               Figma
+            </label>
+          </fieldset>
+          <label for="Mensagem" >
+            Sugestão
+            <input type="text" id="Mensagem" class="Mensagem">
+          </label>
+          <input type="submit" class="enviar">
+        </form>
+    </div>
+</body>
+</html>
